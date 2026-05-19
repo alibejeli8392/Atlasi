@@ -1,0 +1,241 @@
+Design a premium single-page cafe website for "Atlasi Café" 
+(کافه اطلسی). The aesthetic is rooted in Pahlavi-era Iranian 
+minimalism: 1960s-70s Tehran, where modernism met Persian tradition. 
+Clean geometry, warm earthy tones, traditional Iranian tile patterns, 
+and brass details.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BRAND IDENTITY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Name EN: ATLASI CAFÉ
+Name FA: کافه اطلسی
+
+Tagline EN: "soft like silk. open like the sky."
+Tagline FA: «نرم چون اطلس، باز چون آسمان»
+
+Brand story EN:
+"atlasi — from the persian atlas.
+a fabric so smooth, it was worn only by those
+who knew the worth of softness.
+a flower that blooms in every color, in every garden.
+a sky that holds everything above it, quietly.
+atlasi café was made for the in-between moments —
+warm like silk, colorful like the flower,
+open like the ninth sky.
+somewhere you can arrive exactly as you are."
+
+Brand story FA:
+"اطلسی — از جنس اطلس.
+پارچه‌ای که نرمی‌اش ارزش داشت.
+گلی که در هر رنگ می‌شکفد.
+آسمانی که همه چیز را در خود جا می‌دهد.
+کافه اطلسی برای لحظه‌های میان‌راهی ساخته شد."
+
+Farsi phrase: نوش جان
+Instagram: @atlasicafe
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DESIGN SYSTEM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Colors:
+- Background:  #F5EFE0  (warm parchment)
+- Primary:     #2C4A3E  (deep Persian green)
+- Accent:      #C9922A  (antique brass/gold)
+- Text:        #1A1A1A  (near black)
+- Muted:       #8B6F47  (earthy brown)
+- Surface:     #EDE5D0  (card background)
+- Dark:        #1E3530  (darkest green for footer)
+
+Typography:
+- EN headings: Playfair Display italic (Google Fonts)
+- FA headings: Vazirmatn bold (Google Fonts)
+- Body: Inter light, tracking-wide
+- All Persian: dir="rtl", font-family Vazirmatn
+
+Decorative:
+- Thin gold (#C9922A) lines as dividers
+- Geometric Iranian tile border (star/hexagon repeat pattern)
+  as subtle overlays — opacity 0.06–0.10
+- Gold ornament symbol ✦ between sections
+- Brass dot ornaments: ◆ 
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAVBAR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Fixed top, height 72px, z-50
+- Over hero: transparent
+- On scroll: background rgba(44,74,62,0.85) 
+  backdrop-filter blur(20px)
+  border-bottom 1px solid rgba(201,146,42,0.3)
+- Left: "ATLASI" Playfair italic #F5EFE0 text-xl
+- Right: HOME | MENU | ABOUT
+  Inter caps tracking-widest text-xs #F5EFE0 gap-10
+- Hover: color → #C9922A transition 0.3s
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1 — HERO (100vh)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Background: #2C4A3E
+- Subtle geometric Iranian tile pattern overlay (opacity 0.07)
+  hexagonal/star repeat, color #C9922A
+- Center content (flex-col items-center justify-center):
+  * Gold ornament: ✦
+  * Decorative thin gold rectangular border frame
+    (4 corner star ornaments, thin lines connecting them)
+    Inside frame:
+    - "ATLASI CAFÉ" Playfair Display italic, 5xl, #F5EFE0
+    - thin gold line (w-24 mx-auto my-3)
+    - "کافه اطلسی" Vazirmatn bold, 2xl, #C9922A
+    - "soft like silk. open like the sky." 
+      Inter light italic, sm, #F5EFE0 opacity-70 mt-4
+    - «نرم چون اطلس، باز چون آسمان»
+      Vazirmatn, sm, #C9922A opacity-80
+  * Gold ornament below: ✦
+- Bottom center: animated scroll dot (gold, bouncing)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2 — BRAND STORY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Background: #F5EFE0
+- Top border: 1px solid #C9922A full-width
+- Two columns (lg:grid-cols-[3fr_2fr]), stacked mobile:
+
+  Left col (py-24 px-12):
+  * Label: "OUR STORY — داستان ما"
+    Inter caps tracking-widest text-xs #8B6F47 mb-6
+  * Heading: "soft like silk. open like the sky."
+    Playfair italic text-4xl #1A1A1A leading-tight
+  * Body: brand story EN text
+    Inter light #8B6F47 leading-[1.9] text-base mt-6
+  * Divider: ────✦──── gold #C9922A mt-8
+  * "نوش جان" Vazirmatn text-2xl #C9922A mt-4
+
+  Right col (bg-#EDE5D0 flex items-center justify-center p-12):
+  * Large geometric tile mosaic block
+    (CSS: repeating pattern of rotated squares/stars)
+    bg-#2C4A3E, 280x280px, border 1px solid #C9922A
+  * Caption: "@atlasicafe" Inter caps text-xs #8B6F47 mt-4
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3 — OUR FAVORITES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Background: #2C4A3E
+- py-24 px-6
+- Header centered mb-16:
+  * thin gold line w-32 mx-auto
+  * "OUR FAVORITES" Playfair italic text-4xl #F5EFE0 my-4
+  * "علاقه‌مندی‌ها" Vazirmatn #C9922A
+  * thin gold line w-32 mx-auto
+
+- grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto
+
+  Cards:
+  bg-#1E3530, border 1px solid #C9922A, rounded-none
+
+  Image area: aspect-[4/5] bg-#2C4A3E 
+  with inset gold border (4px inside), overflow-hidden
+
+  Text area p-5:
+  - EN name: Playfair italic #F5EFE0 text-lg
+  - FA name: Vazirmatn #C9922A text-sm mt-1
+  - Description: Inter light #F5EFE0 opacity-50 text-xs mt-2
+  - Price: Inter #C9922A text-sm tracking-wider mt-3
+
+  Card 1: TIRAMISU LATTE / لاته تیرامیسو
+          "layers of warmth in every sip" / $—
+  Card 2: RASPBERRY & ROSE MATCHA / ماچای رز و تمشک
+          "bloomed with intention" / $—
+  Card 3: SAFFRON & ROSE MATCHA / ماچای زعفران و گل
+          "a persian afternoon, iced" / $—
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4 — THE MENU
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Background: #F5EFE0
+- py-24 px-6
+- max-w-3xl mx-auto
+
+Header centered mb-16:
+  "THE MENU" Playfair italic text-4xl #1A1A1A
+  "منو" Vazirmatn #C9922A mt-1
+  ────✦──── gold mt-4
+
+Category header style:
+  Inter caps tracking-widest text-xs #2C4A3E
+  border-bottom 2px solid #C9922A pb-2 mb-6
+
+Item row style:
+  flex items-baseline py-4
+  border-bottom 1px solid #EDE5D0
+  - Name: Playfair text-xl #1A1A1A
+  - Leader: flex-1 border-b border-dotted border-#8B6F47 
+    opacity-30 mx-4
+  - Price: Inter #C9922A text-sm tracking-wider
+  Sub-description: Inter light text-xs #8B6F47 mt-1
+
+Menu data:
+  MATCHA — ماچا:
+  · Pistachio Cream Matcha Latte | $8
+    matcha + agave, pistachio butter, pistachio cream top
+  · Raspberry & Rose Matcha | $—
+  · Saffron & Rose Matcha | $—
+
+  ✦
+
+  LATTES — لاته:
+  · Tiramisu Latte | $—
+
+  ✦
+
+  SPECIALS — ویژه:
+  · Seasonal Special | ask us!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5 — ABOUT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- lg:grid-cols-2, min-h-[70vh]
+- Left: image placeholder
+  bg-#2C4A3E with inset gold border frame
+  caption: "the hands behind your cup"
+  Inter light italic text-xs #C9922A text-center mt-3
+
+- Right: bg-#EDE5D0 flex flex-col justify-center p-16
+  * Small gold geometric ornament (◆◆◆) centered top
+  * "born from a question." Playfair italic text-4xl #1A1A1A
+  * Body: Inter light #8B6F47 leading-relaxed mt-4
+    "Atlasi Café began as a search for softness in a fast world.
+    Like the atlas flower that blooms in every color,
+    we welcome every person, every mood, every moment.
+    Come as you are. Stay as long as you need."
+  * FA body: Vazirmatn #8B6F47 text-sm mt-4 dir="rtl"
+    "کافه اطلسی برای لحظه‌های میان‌راهی ساخته شد."
+  * ────✦──── gold mt-8
+  * "@atlasicafe" Inter caps text-xs #2C4A3E tracking-widest
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FOOTER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Background: #1E3530
+- top border: 1px solid #C9922A
+- py-20 text-center
+
+Content:
+* Small geometric tile ornament (gold, 40px)
+* "ATLASI CAFÉ" Playfair italic text-3xl #F5EFE0 mt-6
+* "کافه اطلسی" Vazirmatn #C9922A mt-1
+* ────✦──── gold mt-6
+* "soft like silk. open like the sky."
+  Playfair italic text-sm #F5EFE0 opacity-60 mt-4
+* "@atlasicafe" Inter caps text-xs #C9922A mt-6 
+  tracking-widest
+* "نوش جان" Vazirmatn text-2xl #C9922A mt-4
+* "© 2025 Atlasi Café" Inter text-xs #F5EFE0 opacity-30 mt-8
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OVERALL FEEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+This should feel like stepping into a quiet café in 1970s Tehran —
+warm parchment walls, deep green woodwork, brass fixtures, 
+Persian geometric tiles. Elegant, unhurried, deeply intentional.
+Gold used sparingly. Persian and English with equal dignity.
+Every detail whispers "atlasi" — silk, flower, sky.
