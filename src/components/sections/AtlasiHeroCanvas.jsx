@@ -15,7 +15,6 @@ export function AtlasiHeroCanvas() {
     `
 
     const fragmentShader = `
-      #define TWO_PI 6.2831853072
       precision highp float;
       uniform vec2 resolution;
       uniform float time;
@@ -115,14 +114,7 @@ export function AtlasiHeroCanvas() {
   return (
     <div
       ref={containerRef}
-      style={{
-        position: "absolute",
-        inset: 0,
-        width: "100%",
-        height: "100%",
-        overflow: "hidden",
-        zIndex: 0,
-      }}
+      className="absolute inset-0 h-full w-full overflow-hidden z-0"
     />
   )
 }
